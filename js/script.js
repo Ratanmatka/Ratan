@@ -1,6 +1,3 @@
-document.querySelector('.install-btn').addEventListener('click', function() {
-    window.location.href = 'https://ratan365.in/app/ratan365.apk';
-});
 
 let currentImageIndex = 0;
 const images = document.querySelectorAll('.gallery-image');
@@ -78,3 +75,4 @@ function handleTouchMove(evt) {
     xDown = null;
     yDown = null;
 }
+
