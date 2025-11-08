@@ -1,26 +1,9 @@
 <!DOCTYPE html><html lang="en"><head>
-    <!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WD83RSJ671"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RATAN 365 Online Matka - Best Matka App 2025</title>
+<link rel="stylesheet" href="css/styles.css">
 
-  gtag('config', 'G-WD83RSJ671');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RATAN 365 Online Matka - Best Matka App 2025</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DK7SC8EY94"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DK7SC8EY94');
-</script>
 </head>
 <body>
     <!-- Header Section -->
@@ -83,7 +66,7 @@
 
 
         <div class="btn-cnt">
-            <button class="install-btn">Download App</button>
+            <button class="install-btn" onclick="trackAndRedirect()">Download App</button>
         </div>
 
         <!-- App Gallery Section -->
@@ -229,6 +212,27 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1305487491372405&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+
+
+    <script>
+function trackAndRedirect() {
+  try {
+    const alreadyFired = sessionStorage.getItem('subscribedEvent');
+    if (!alreadyFired) {
+      const eventId = 'subscribe_' + Date.now();
+      fbq('trackCustom', 'Subscribe', {}, { eventID: eventId });
+      sessionStorage.setItem('subscribedEvent', '1');
+    }
+  } catch(e) {
+    console.log("Pixel event failed", e);
+  }
+
+  // Redirect after 0.5s delay for tracking
+  setTimeout(() => {
+    window.location.href = 'https://ratan365.in/app/ratan365.apk';
+  }, 500);
+}
+</script>
 
 
 </body></html>
